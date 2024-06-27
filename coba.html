@@ -4,149 +4,421 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistic Counter</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-
-        .content {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ccc;
-        }
-
-        .counter-container {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .counter {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Happy Birthday!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">      
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar scroll</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Link
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Link</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <div class="home-page" id="home">
+        <canvas id="fireworksCanvas"></canvas>
+        <div class="envelope">
+            <h1>Halo, Dinda!</h1>
+            <p>Kepada Yth, Ibu Dinda Zalfa Salsabila di Tempat.<br> Sedang dimanapun anda berada, ini ada surat terbuka
+                dan surat penting yang lebih penting dari apapun untuk Ibu Dinda. Tolong dibuka dan disimak ya Ibu
+                Dinda, jangan sampai lupa Ibu Dinda. Terimakasih, Ibu Dinda.</p>
+            </br>
+            </br>
+            </br>
+            <div class="rubber" style="align-items: start;">
+                Pacarmu, Ico
             </div>
+            <button class="button button-primary button-front" onclick="startCelebration()">Buka yuukkkk</button>
         </div>
-    </nav>
-
-    <div class="content">Scroll down to see the counters</div>
-    <div class="counter-container" id="counter1">
-        <!-- Counter container for 100 -->
-        <div class="counter" data-target="12"></div>
-    </div>
-    <div class="counter-container" id="counter2">
-        <!-- Counter container for 150 -->
-        <div class="counter" data-target="200"></div>
-    </div>
-    <div class="counter-container" id="counter3">
-        <!-- Counter container for 200 -->
-        <div class="counter" data-target="450"></div>
-    </div>
-    <div class="counter-container" id="counter4">
-        <!-- Counter container for 250 -->
-        <div class="counter" data-target="1420"></div>
-    </div>
-    <div class="counter-container" id="counter5">
-        <!-- Counter container for 300 -->
-        <div class="counter" data-target="300"></div>
-    </div>
-    <div class="counter-container" id="counter6">
-        <!-- Counter container for 350 -->
-        <div class="counter" data-target="350"></div>
+        <footer id="footer">
+            <p>Happy Birthday, [Her Name]!</p>
+            <p>Made with love by [Your Name]</p>
+        </footer>
     </div>
 
-    <script>
-        const duration = 2000; // Total duration in milliseconds for the counters to finish
+    <div class="main-content" id="main-content">
+        <div class="section2">
+            <section class="flower-crown">
+                <div class="flower-text-box">
+                    <h2>Halo, <span style="color: aqua;">Dinda</span>!</h2>
+                    <p>Yuk liat bawah ada apa aja sih di sini</p>
+                </div> 
+                <div class="sky">
+                    <div class="stars"></div>
+                    <div class="body-flower">
+                        <div class="flower">
+                            <div class="f-wrapper">
+                                <div class="flower__line"></div>
+                                <div class="f">
+                                    <div class="flower__leaf flower__leaf--1"></div>
+                                    <div class="flower__leaf flower__leaf--2"></div>
+                                    <div class="flower__leaf flower__leaf--3"></div>
+                                    <div class="flower__leaf flower__leaf--4"></div>
+                                    <div class="flower__leaf flower__leaf--5"></div>
+                                    <div class="flower__leaf flower__leaf--6"></div>
+                                    <div class="flower__leaf flower__leaf--7"></div>
+                                    <div class="flower__leaf flower__leaf--8 flower__fall-down--yellow"></div>
+                                </div>
+                            </div>
 
-        function updateCounter(target, counterDiv) {
-            let count = 0;
-            const increment = target / (duration / 10); // Number to increment each time (adjusting for interval of 10ms)
-            function incrementCounter() {
-                if (count < target) {
-                    count += increment;
-                    if (count > target) count = target; // Ensure count doesn't exceed target
-                    counterDiv.textContent = Math.ceil(count);
-                    setTimeout(incrementCounter, 10); // Update every 10ms
-                }
-            }
-            incrementCounter();
-        }
+                            <div class="f-wrapper f-wrapper--2">
+                                <div class="flower__line"></div>
+                                <div class="f">
+                                    <div class="flower__leaf flower__leaf--1"></div>
+                                    <div class="flower__leaf flower__leaf--2"></div>
+                                    <div class="flower__leaf flower__leaf--3"></div>
+                                    <div class="flower__leaf flower__leaf--4"></div>
+                                    <div class="flower__leaf flower__leaf--5"></div>
+                                    <div class="flower__leaf flower__leaf--6"></div>
+                                    <div class="flower__leaf flower__leaf--7"></div>
+                                    <div class="flower__leaf flower__leaf--8 flower__fall-down--pink"></div>
+                                </div>
+                            </div>
 
-        function startAllCounters() {
-            let counterDivs = document.querySelectorAll('.counter');
+                            <div class="f-wrapper f-wrapper--3">
+                                <div class="flower__line"></div>
+                                <div class="f">
+                                    <div class="flower__leaf flower__leaf--1"></div>
+                                    <div class="flower__leaf flower__leaf--2"></div>
+                                    <div class="flower__leaf flower__leaf--3"></div>
+                                    <div class="flower__leaf flower__leaf--4"></div>
+                                    <div class="flower__leaf flower__leaf--5"></div>
+                                    <div class="flower__leaf flower__leaf--6"></div>
+                                    <div class="flower__leaf flower__leaf--7"></div>
+                                    <div class="flower__leaf flower__leaf--8 flower__fall-down--purple"></div>
+                                </div>
+                            </div>
+                            <div class="f-wrapper f-wrapper--3">
+                                <div class="flower__line"></div>
+                                <div class="f">
+                                    <div class="flower__leaf flower__leaf--1"></div>
+                                    <div class="flower__leaf flower__leaf--2"></div>
+                                    <div class="flower__leaf flower__leaf--3"></div>
+                                    <div class="flower__leaf flower__leaf--4"></div>
+                                    <div class="flower__leaf flower__leaf--5"></div>
+                                    <div class="flower__leaf flower__leaf--6"></div>
+                                    <div class="flower__leaf flower__leaf--7"></div>
+                                    <div class="flower__leaf flower__leaf--8 flower__fall-down--purple"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-            counterDivs.forEach(counterDiv => {
-                let target = parseInt(counterDiv.getAttribute('data-target'), 10);
-                counterDiv.textContent = 0; // Set initial value
-                updateCounter(target, counterDiv);
-            });
-        }
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Halo, <span style="color: aqua;">Dinda</span>!</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Bunganya jelek yah &#128577; WKWKWKWKWK maap</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Yaudah gapapa, yang penting intinya</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Happy Birthday!</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Ini kado spesial dari pacarmu</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Pacarmu siapa emang?</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">ah masa sih itu pacarmu &#128580;</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">yang kenceng jawabnya &#128545;</h2>
+            </section>
+        </div>
 
-        let observer = new IntersectionObserver(entries => {
-            if (entries.some(entry => entry.isIntersecting)) {
-                startAllCounters();
-                entries.forEach(entry => observer.unobserve(entry.target)); // Stop observing once the counters have started
-            }
-        });
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Yay betul &#128522;</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Dari Pacarmu, <span style="color: aquamarine;">Ico</span> &#128525;</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">yah walaupun kayak gini aja, tapi semoga kamu suka yah!</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">yuk liat bawah!</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Milestone apa aja yang udah <span style="color: aquamarine;">Ico</span> lewati bersama
+                    <span style="color: aqua;">Dinda</span>?
+                </h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <img style="width: 400px; height: 100px;" class="photo-left photo photo-hover" src="./dindangucap.jpeg"
+                        alt="Explanation Photo">
+                    <div class="explanation-right">
+                        <h2>Chatnya <span style="color: aqua;">Dinda</span> yang bikin <span
+                                style="color: aquamarine;">Ico</span> seneng</h2>
+                        <p>dari awal chat aja udah gini, aku baca tulisan ini rasanya tenang banget. dari sini aku mulai
+                            ngerasa, kayaknya bisa nih aku lanjut sama dia ini</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        window.onload = function () {
-            let counterContainers = document.querySelectorAll('.counter-container');
-            counterContainers.forEach(container => {
-                observer.observe(container);
-            });
-        };
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <div class="explanation-left">
+                        <h2>Vidcall Pertama</h2>
+                        <p>Disini aku sukaaa banget liat mukamu, bener bener suka. bener bener
+                            barefacemu ini aku suka. di saat ini bener bener aku jadi pengen banget punya kamu. kayak
+                            anjir
+                            ini aku sama orang ini aja kali yak. seneng banget liat mukanya&#129392;</p>
+                    </div>
+                    <img class="photo-right photo photo-hover" src="./dindavidcall.jpeg" alt="Explanation Photo">
+                </div>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <img class="photo-left photo photo-hover" src="./dindadatepertama.jpeg" alt="Explanation Photo">
+                    <div class="explanation-right">
+                        <h2>Ngedate Pertama</h2>
+                        <p>Yah ini dia date pertama kita wkwkwkwk, dan ternyata tempat ini jadi tempat
+                            penting yaa bagi kita. jadi sering kesitu deh. Jujur di hari ini, aku udah seneng banget
+                            sama kamu dan gatau kayak pengen sama kamu terusssss</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <div class="explanation-left">
+                        <h2>Photobox!</h2>
+                        <p>Ini yang lebih officially ngedate sih, yg tadi karena pulang bareng aja wkwk. Langsunggg
+                            diajak photobox sama si cantik ini, seru deh! walaupun hasilnya yang di <span
+                                class="message-highlight-alt">Ico</span> ngelipet kayak koran! (kata
+                            <span style="color: aqua;">Dinda</span>)
+                        </p>
+                    </div>
+                    <img class="photo-right photo photo-hover" src="./dindaphotobox.jpeg" alt="Explanation Photo">
+                </div>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <img class="photo-left photo photo-hover" src="./dindahistory.jpeg" alt="Explanation Photo">
+                    <div class="explanation-right">
+                        <h2>and the rest is history</h2>
+                        <p>sampe sekarang masih senenggg jalan jalan, masih seneng makan bareng, masih seneng photobox
+                            bareng juga. pokoknya wajib seneng terus kata <span style="color: aqua;">Dinda</span> kalo
+                            sama dia tuh gaboleh nggak seneng&#128545;</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="message" style="padding: 40px;">
+                <h2 class="halo">Kamu orangnya unik, karena kamu</h2>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <img class="photo-left photo photo-hover" src="./dindafoto.jpeg" alt="Explanation Photo">
+                    <div class="explanation-right">
+                        <h2>Suka fokus foto sebelum makan</h2>
+                        <p>Selalu sebelum makan, kamu selalu fokus nyari angle dan cahaya yang bagus buat foto, hihi
+                            lucunya pacar aku iniii</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <div class="explanation-left">
+                        <h2>Seneng terus depan aku</h2>
+                        <p>Menyenangkan selalu dekat kamu tuh, kamu selalu kasih aku energi terus karena kamu
+                            senengggggg terus kalo ketemu. senyum dan kelakuan positifmu bikin aku seneng teruss </p>
+                    </div>
+                    <img class="photo-right photo photo-hover" src="./dindasenyum.jpeg" alt="Explanation Photo">
+                </div>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <img class="photo-left photo photo-hover" src="./dindapap.jpeg" alt="Explanation Photo">
+                    <div class="explanation-right">
+                        <h2>Suka ngepap</h2>
+                        <p>Tanpa request dari aku, kamu suka banget ngepap ke aku, hepiiiii. bener bener tanpa effort
+                            aku buat ngepap ke aku.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <div class="explanation-left">
+                        <h2>Bisa ngerutin hidung</h2>
+                        <p>Apakah karena ini hidungnya pesek?? tidak ada yang tahu. intinya aku gabisa bikin idung kerut
+                            kayak gitu tapi dia bisa. dan kata <span style="color: aqua;">Dinda</span> gaya ini tuh
+                            bikin dia makin lucuu katanya sih gituuu</p>
+                    </div>
+                    <img class="photo-right photo photo-hover" src="./dindakerut.jpeg" alt="Explanation Photo">
+                </div>
+            </section>
+        </div>
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="photo-explanation" id="photo-explanation">
+                <div class="photo-explanation-container">
+                    <img class="photo-left photo photo-hover" src="./dindasayang.jpeg" alt="Explanation Photo">
+                    <div class="explanation-right">
+                        <h2>Sayang banget sama aku</h2>
+                        <p>Ini juga unik, karena kamu bener bener sayanggg banget sama aku. kalo aku liat sayangnya juga
+                            SAYANG BANGET gitu loh. aku bener bener disayang sama kamu dan kamu bener bener sabar dalam
+                            ngehadapin aku. aku seneng banget punya kamu.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="gallery" style="padding-bottom: 50px;">
+                <section class="message" style="padding: 40px;">
+                    <h4 class="halo" style="margin: 30px;">Intinya <span style="color: aqua;">Dinda</span> ini unik
+                        banget deh! happy banget ada dan punya dia di hidupku yang berantakan ini. Serba bahagia
+                        pokoknya deh sama dia</h4>
+                </section>
+                <!-- <h2>Memorable Photos</h2> -->
+
+                <div class="photos">
+                    <!-- Add your photos here -->
+                    <img class="photo-hover photo" src="./dinda1.jpeg" alt="Memory 1">
+                    <img class="photo-hover photo" src="./dinda2.jpeg" alt="Memory 2">
+                    <img class="photo-hover photo" src="./dinda3.jpeg" alt="Memory 3">
+                </div>
+            </section>
+        </div>
+        <div class="section full-size" style="height:200vh">
+            <div class="starry-night" id="starry-night"></div>
+            <div class="card">
+                <div class="starry-night" id="starry-night"></div>
+
+                <div class="cover item-a">
+                    <h1>Dinda's<br>Birthday<br>Card</h1>
+                    <span class="price">From: Ico</span>
+                    <div class="card-back" style="padding-top: 40px;">
+                        <p>Selamat ulang tahun sayangku, Selamat umur twenty-fouurrrrrrrrrrrrrrr</p>
+                        <p>Semoga di tahun ini semua dilancarkan, diberikan kesehatan selalu, dilimpahkan rezekinya, dan
+                            apa
+                            yang disemogakan tersemogakan.</p>
+                        <p>Terimakasih <span class="message-highlight">Dinda</span>, udah menjadi <span
+                                class="message-highlight">Dinda</span> yang sabar menghadapi <span
+                                class="message-highlight-alt">Ico</span> yang pemarah ini, selalu dengerin <span
+                                class="message-highlight-alt">Ico</span> kalo ada keluh kesah, selalu sayang sama <span
+                                class="message-highlight-alt">Ico</span>, selalu 100% kalo sama <span
+                                class="message-highlight-alt">Ico</span>, dan selalu ngertiin <span
+                                class="message-highlight-alt">Ico</span> apapun kondisinya. Semoga kamu mau sama aku
+                            terus
+                            yah sampai kapanpun umur kita.</p>
+                        <p>Semoga sayangmu ga akan pernah berkurang sama aku yaa, I love u <span
+                                class="message-highlight-pink">soooo0OoOOoooooo much </span><span
+                                class="message-highlight">Dinda</span>kuuuu</p>
+                        <p>Love, Pacarmu <span class="message-highlight-alt">Ico</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="video-message">
+                <h2>Video untuk <span class="message-highlight">Dinda</span></h2>
+                <div class="video-container">
+                    <video controls poster="./dinda1.jpeg">
+                        <source src="./video_dinda.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </div>
+
+        <div class="section full-size">
+            <div class="starry-night" id="starry-night"></div>
+            <section class="gallery" style="padding-bottom: 50px;">
+                <section class="memories">
+                    <h2 class="halo">Sekali lagi, Selamat Ulang Tahun <span
+                        class="message-highlight">Dinda Zalfa Salsabila</span></h2>
+                    <p class="halo">Semoga kamu suka ya!&#128516;</p>
+                </section>
+                <!-- <h2>Memorable Photos</h2> -->
+
+                <div class="photos">
+                    <!-- Add your photos here -->
+                    <img class="photo-hover photo" src="./dindabareng1.jpeg" alt="Memory 1">
+                    <img class="photo-hover photo" src="./dindabareng2.jpeg" alt="Memory 2">
+                    <img class="photo-hover photo" src="./dindabareng3.jpeg" alt="Memory 3">
+                    <img class="photo-hover photo" src="./dindabareng4.jpeg" alt="Memory 3">
+                    <img class="photo-hover photo" src="./dindabareng5.jpeg" alt="Memory 3">
+                </div>
+            </section>
+        </div>      
+    </div>
+
+    <script src="fireworks.js"></script>
 
 </body>
 
