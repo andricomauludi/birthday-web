@@ -7,7 +7,7 @@ COPY . /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 3001 (for your static content)
-EXPOSE 3002
+EXPOSE 2128
 
 # Start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
